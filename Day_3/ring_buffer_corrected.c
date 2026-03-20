@@ -46,7 +46,7 @@ int rb_pop(RingBuffer *rb, uint8_t *data)
 {
     if(rb->head == rb->tail)
     {
-        printf("Cannot Pop. buffer Empty");
+        printf("Cannot Pop. Buffer empty\n");
         return -1; // empty
     }
 
